@@ -43,7 +43,7 @@ export function GalaxyBackground() {
           arm,
           size: Math.random() * 1.5 + 0.35,
           hue: PINKS[Math.floor(Math.random() * PINKS.length)] ?? 350,
-          alpha: (Math.random() * 0.5 + 0.25) * (compact ? 0.7 : 1),
+          alpha: (Math.random() * 0.55 + 0.4) * (compact ? 0.7 : 1),
           twinkle: Math.random() * Math.PI * 2,
           speed: 0.00006 + Math.random() * 0.00006,
         };
@@ -78,9 +78,9 @@ export function GalaxyBackground() {
 
       // central glow
       const glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, scale * 0.7);
-      glow.addColorStop(0, "rgba(255, 205, 228, 0.28)");
-      glow.addColorStop(0.25, "rgba(240, 110, 170, 0.14)");
-      glow.addColorStop(0.6, "rgba(150, 40, 95, 0.06)");
+      glow.addColorStop(0, "rgba(255, 205, 228, 0.42)");
+      glow.addColorStop(0.25, "rgba(240, 110, 170, 0.22)");
+      glow.addColorStop(0.6, "rgba(170, 45, 105, 0.1)");
       glow.addColorStop(1, "rgba(10, 8, 16, 0)");
       ctx.fillStyle = glow;
       ctx.fillRect(0, 0, width, height);

@@ -122,8 +122,8 @@
     z-index: 1;
     pointer-events: none;
     background:
-      radial-gradient(120% 90% at 50% 0%, oklch(0.14 0.008 320 / 20%), oklch(0.1 0.01 320 / 82%)),
-      linear-gradient(180deg, oklch(0.1 0.01 320 / 35%), oklch(0.09 0.01 320 / 70%));
+      radial-gradient(110% 80% at 50% 12%, oklch(0.14 0.008 320 / 5%), oklch(0.1 0.01 320 / 62%)),
+      linear-gradient(180deg, oklch(0.1 0.01 320 / 12%), oklch(0.09 0.01 320 / 52%));
   }
 
   ::selection {
